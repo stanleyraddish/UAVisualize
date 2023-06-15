@@ -10,7 +10,6 @@ class Display:
 
     def get_display(self):
         display = np.zeros((self.height, self.width, 3), dtype=float)
-
         for comp in self.components:
             seen_overlay = comp.seen_overlay_patch
             for o_y in range(comp.overlay_height):
